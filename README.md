@@ -1,44 +1,77 @@
-# 🌸 LIHUA GUARD AI #
+# LIHUA GUARD AI
 
-Version: 0.2
+### Intelligent AI-Powered Security Assistant
 
-AI Security Assistant System.
+LIHUA GUARD AI is an AI-based security assistant project designed to explore intelligent monitoring, visual recognition, and threat detection through an integrated system.
 
-# Current Development #
+The project aims to develop a security system that can recognize its owner, analyze visual information, identify potential threats, and provide voice-based responses.
 
-- Core Architecture
-- AI Vision System
-- Face Recognition
-- Threat Detection
-- Voice Response
+> **Project Status:** Active Development  
+> **Current Version:** v0.03
 
-# Status #
+---
 
-Development Phase
+## Overview
 
-# Version History #
+LIHUA GUARD AI is an ongoing AI engineering project focused on combining computer vision, security monitoring, and intelligent interaction into one system.
 
-# v0.2 Core Security Foundation #
-Status: Stable ✅
+It is being developed incrementally, starting with a laptop-based prototype before expanding toward IoT and mobile integration.
 
-Features:
-- Core System
-- Threat Score
-- Decision Engine
-- Security Logger
-- Alert System
+## Core Features
 
-Test Result:
-System running successfully.
-## v0.3 - Context-Aware Threat Analysis
+- **Face Recognition** — Visual identity recognition for the owner.
+- **AI Vision** — Camera-based visual analysis.
+- **Threat Detection** — Detection and assessment of potential security threats.
+- **Voice Response** — Voice-based system interaction.
+- **Local AI Integration** — Exploration of locally running AI models.
 
-LIHUA now adds a first context layer before a dangerous-object detection can contribute to threat scoring.
+*Feature descriptions should be updated as implementation and testing progress.*
 
-Context evidence includes:
-- dangerous object + nearby tracked person
-- normalized spatial relation to the person bounding box
-- tracked object movement
-- whether the object is approaching the person
-- persistence across multiple frames
+## Technology Stack
 
-A stationary isolated knife/bat does not contribute a threat score in this context layer. This is an initial prototype; thresholds are frame/pixel based and should be calibrated with real camera data before production use.
+| Technology | Purpose |
+|---|---|
+| Python | Main programming language |
+| YOLO | Object detection model |
+| Computer Vision | Visual processing |
+| Ollama | Local AI model integration |
+
+## Project Structure
+
+```text
+LIHUA-GUARD-AI/
+│
+├── core/       # Main system components
+├── security/   # Security-related modules
+├── vision/     # Computer vision components
+├── main.py     # Main application entry point
+│
+├── yolo11n.pt  # YOLO model weights
+├── README.md
+└── .gitignore
+```
+
+## Development Roadmap
+
+- [x] Initial project structure
+- [x] Initial security system prototype
+- [x] YOLO model integration
+- [ ] Improve face recognition reliability
+- [ ] Optimize system performance
+- [ ] Improve threat analysis
+- [ ] Android application integration
+- [ ] IoT hardware integration
+
+## Project Vision
+
+LIHUA GUARD AI is being developed toward a more intelligent, responsive, and integrated security assistant.
+
+The long-term vision is to combine AI software, IoT devices, and mobile applications into a unified security ecosystem.
+
+## Development
+
+This project is currently under active development. Features, architecture, and implementation may change as the system evolves.
+
+## License
+
+License information will be added in a future release.
